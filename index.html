@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="col-md-12">
+        <h3><span class="label label-success">Калькулятор калорий</span></h3>
+        <p class="navbar-text"></p>
+    </div>
+<div class="row">
+<table id="calc-food" class="table">
+    <tbody><tr>
+        <th>Продукт</th>
+        <th>Ккал на 100 гр.</th>
+        <th>Сколько съедено</th>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Мясо</span></h3></td>
+    </tr>
+    <tr>
+        <td>Говядина 1-й категории</td>
+        <td>187</td>
+        <td>
+            <input type="hidden" value="187" name="food[0][kkal]" id="food_0_kkal">
+            <input min="0" type="number" value="0" name="food[0][value]" id="food_0_value">
+        </td>
+    </tr>
+    <tr>
+        <td>Телятина</td>
+        <td>90</td>
+        <td>
+            <input type="hidden" value="90" name="food[1][kkal]" id="food_1_kkal">									<input min="0" type="number" value="0" name="food[1][value]" id="food_1_value">								</td>
+    </tr>
+    <tr>
+        <td>Свинина жирная</td>
+        <td>489</td>
+        <td>
+            <input type="hidden" value="489" name="food[2][kkal]" id="food_2_kkal">									<input min="0" type="number" value="0" name="food[2][value]" id="food_2_value">								</td>
+    </tr>
+    <tr>
+        <td>Свинина мясная</td>
+        <td>355</td>
+        <td>
+            <input type="hidden" value="355" name="food[3][kkal]" id="food_3_kkal">									<input min="0" type="number" value="0" name="food[3][value]" id="food_3_value">								</td>
+    </tr>
+    <tr>
+        <td>Окорок</td>
+        <td>333</td>
+        <td>
+            <input type="hidden" value="333" name="food[4][kkal]" id="food_4_kkal">									<input min="0" type="number" value="0" name="food[4][value]" id="food_4_value">								</td>
+    </tr>
+    <tr>
+        <td>Корейка</td>
+        <td>431</td>
+        <td>
+            <input type="hidden" value="431" name="food[5][kkal]" id="food_5_kkal">									<input min="0" type="number" value="0" name="food[5][value]" id="food_5_value">								</td>
+    </tr>
+    <tr>
+        <td>Мясо кролика</td>
+        <td>199</td>
+        <td>
+            <input type="hidden" value="199" name="food[6][kkal]" id="food_6_kkal">									<input min="0" type="number" value="0" name="food[6][value]" id="food_6_value">								</td>
+    </tr>
+    <tr>
+        <td>Мясо лося</td>
+        <td>101</td>
+        <td>
+            <input type="hidden" value="101" name="food[7][kkal]" id="food_7_kkal">									<input min="0" type="number" value="0" name="food[7][value]" id="food_7_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Субпродукты говяжьи</span></h3></td>
+    </tr>
+    <tr>
+        <td>Вымя</td>
+        <td>173</td>
+        <td>
+            <input type="hidden" value="173" name="food[8][kkal]" id="food_8_kkal">									<input min="0" type="number" value="0" name="food[8][value]" id="food_8_value">								</td>
+    </tr>
+    <tr>
+        <td>Лёгкое</td>
+        <td>103</td>
+        <td>
+            <input type="hidden" value="103" name="food[9][kkal]" id="food_9_kkal">									<input min="0" type="number" value="0" name="food[9][value]" id="food_9_value">								</td>
+    </tr>
+    <tr>
+        <td>Печень</td>
+        <td>98</td>
+        <td>
+            <input type="hidden" value="98" name="food[10][kkal]" id="food_10_kkal">									<input min="0" type="number" value="0" name="food[10][value]" id="food_10_value">								</td>
+    </tr>
+    <tr>
+        <td>Почки</td>
+        <td>66</td>
+        <td>
+            <input type="hidden" value="66" name="food[11][kkal]" id="food_11_kkal">									<input min="0" type="number" value="0" name="food[11][value]" id="food_11_value">								</td>
+    </tr>
+    <tr>
+        <td>Рубец</td>
+        <td>97</td>
+        <td>
+            <input type="hidden" value="97" name="food[12][kkal]" id="food_12_kkal">									<input min="0" type="number" value="0" name="food[12][value]" id="food_12_value">								</td>
+    </tr>
+    <tr>
+        <td>Сердце</td>
+        <td>87</td>
+        <td>
+            <input type="hidden" value="87" name="food[13][kkal]" id="food_13_kkal">									<input min="0" type="number" value="0" name="food[13][value]" id="food_13_value">								</td>
+    </tr>
+    <tr>
+        <td>Язык</td>
+        <td>163</td>
+        <td>
+            <input type="hidden" value="163" name="food[14][kkal]" id="food_14_kkal">									<input min="0" type="number" value="0" name="food[14][value]" id="food_14_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Субпродукты свиные</span></h3></td>
+    </tr>
+    <tr>
+        <td>Лёгкое</td>
+        <td>92</td>
+        <td>
+            <input type="hidden" value="92" name="food[15][kkal]" id="food_15_kkal">									<input min="0" type="number" value="0" name="food[15][value]" id="food_15_value">								</td>
+    </tr>
+    <tr>
+        <td>Печень</td>
+        <td>108</td>
+        <td>
+            <input type="hidden" value="108" name="food[16][kkal]" id="food_16_kkal">									<input min="0" type="number" value="0" name="food[16][value]" id="food_16_value">								</td>
+    </tr>
+    <tr>
+        <td>Почки</td>
+        <td>80</td>
+        <td>
+            <input type="hidden" value="80" name="food[17][kkal]" id="food_17_kkal">									<input min="0" type="number" value="0" name="food[17][value]" id="food_17_value">								</td>
+    </tr>
+    <tr>
+        <td>Сердце</td>
+        <td>89</td>
+        <td>
+            <input type="hidden" value="89" name="food[18][kkal]" id="food_18_kkal">									<input min="0" type="number" value="0" name="food[18][value]" id="food_18_value">								</td>
+    </tr>
+    <tr>
+        <td>Язык</td>
+        <td>208</td>
+        <td>
+            <input type="hidden" value="208" name="food[19][kkal]" id="food_19_kkal">									<input min="0" type="number" value="0" name="food[19][value]" id="food_19_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Колбасы</span></h3></td>
+    </tr>
+    <tr>
+        <td>Сырокопченые (в среднем)</td>
+        <td>473</td>
+        <td>
+            <input type="hidden" value="473" name="food[20][kkal]" id="food_20_kkal">									<input min="0" type="number" value="0" name="food[20][value]" id="food_20_value">								</td>
+    </tr>
+    <tr>
+        <td>Варено-копченые (сервелат)</td>
+        <td>360</td>
+        <td>
+            <input type="hidden" value="360" name="food[21][kkal]" id="food_21_kkal">									<input min="0" type="number" value="0" name="food[21][value]" id="food_21_value">								</td>
+    </tr>
+    <tr>
+        <td>Полукопченые (в среднем)</td>
+        <td>395</td>
+        <td>
+            <input type="hidden" value="395" name="food[22][kkal]" id="food_22_kkal">									<input min="0" type="number" value="0" name="food[22][value]" id="food_22_value">								</td>
+    </tr>
+    <tr>
+        <td>Вареные (в среднем)</td>
+        <td>252</td>
+        <td>
+            <input type="hidden" value="252" name="food[23][kkal]" id="food_23_kkal">									<input min="0" type="number" value="0" name="food[23][value]" id="food_23_value">								</td>
+    </tr>
+    <tr>
+        <td>Сардельки 1-го сорта</td>
+        <td>198</td>
+        <td>
+            <input type="hidden" value="198" name="food[24][kkal]" id="food_24_kkal">									<input min="0" type="number" value="0" name="food[24][value]" id="food_24_value">								</td>
+    </tr>
+    <tr>
+        <td>Сосиски русские</td>
+        <td>220</td>
+        <td>
+            <input type="hidden" value="220" name="food[25][kkal]" id="food_25_kkal">									<input min="0" type="number" value="0" name="food[25][value]" id="food_25_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Консервы</span></h3></td>
+    </tr>
+    <tr>
+        <td>Говядина тушеная</td>
+        <td>232</td>
+        <td>
+            <input type="hidden" value="232" name="food[26][kkal]" id="food_26_kkal">									<input min="0" type="number" value="0" name="food[26][value]" id="food_26_value">								</td>
+    </tr>
+    <tr>
+        <td>Свинина тушеная</td>
+        <td>349</td>
+        <td>
+            <input type="hidden" value="349" name="food[27][kkal]" id="food_27_kkal">									<input min="0" type="number" value="0" name="food[27][value]" id="food_27_value">								</td>
+    </tr>
+    <tr>
+        <td>Сардины атлантические в масле</td>
+        <td>151</td>
+        <td>
+            <input type="hidden" value="151" name="food[28][kkal]" id="food_28_kkal">									<input min="0" type="number" value="0" name="food[28][value]" id="food_28_value">								</td>
+    </tr>
+    <tr>
+        <td>Горбуша в томатном соусе</td>
+        <td>179</td>
+        <td>
+            <input type="hidden" value="179" name="food[29][kkal]" id="food_29_kkal">									<input min="0" type="number" value="0" name="food[29][value]" id="food_29_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Продукты птицеводства</span></h3></td>
+    </tr>
+    <tr>
+        <td>Куры 1-й категории</td>
+        <td>241</td>
+        <td>
+            <input type="hidden" value="241" name="food[30][kkal]" id="food_30_kkal">									<input min="0" type="number" value="0" name="food[30][value]" id="food_30_value">								</td>
+    </tr>
+    <tr>
+        <td>Утки 1-й категории</td>
+        <td>405</td>
+        <td>
+            <input type="hidden" value="405" name="food[31][kkal]" id="food_31_kkal">									<input min="0" type="number" value="0" name="food[31][value]" id="food_31_value">								</td>
+    </tr>
+    <tr>
+        <td>Индейки 1-й категории</td>
+        <td>276</td>
+        <td>
+            <input type="hidden" value="276" name="food[32][kkal]" id="food_32_kkal">									<input min="0" type="number" value="0" name="food[32][value]" id="food_32_value">								</td>
+    </tr>
+    <tr>
+        <td>Яйца куриные</td>
+        <td>157</td>
+        <td>
+            <input type="hidden" value="157" name="food[33][kkal]" id="food_33_kkal">									<input min="0" type="number" value="0" name="food[33][value]" id="food_33_value">								</td>
+    </tr>
+    <tr>
+        <td>Меланж</td>
+        <td>157</td>
+        <td>
+            <input type="hidden" value="157" name="food[34][kkal]" id="food_34_kkal">									<input min="0" type="number" value="0" name="food[34][value]" id="food_34_value">								</td>
+    </tr>
+    <tr>
+        <td>Яичный порошок</td>
+        <td>544</td>
+        <td>
+            <input type="hidden" value="544" name="food[35][kkal]" id="food_35_kkal">									<input min="0" type="number" value="0" name="food[35][value]" id="food_35_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Кондитерские изделия</span></h3></td>
+    </tr>
+    <tr>
+        <td>Сахар песок</td>
+        <td>399</td>
+        <td>
+            <input type="hidden" value="399" name="food[36][kkal]" id="food_36_kkal">									<input min="0" type="number" value="0" name="food[36][value]" id="food_36_value">								</td>
+    </tr>
+    <tr>
+        <td>Сахар рафинад</td>
+        <td>400</td>
+        <td>
+            <input type="hidden" value="400" name="food[37][kkal]" id="food_37_kkal">									<input min="0" type="number" value="0" name="food[37][value]" id="food_37_value">								</td>
+    </tr>
+    <tr>
+        <td>Патока кукурузная</td>
+        <td>316</td>
+        <td>
+            <input type="hidden" value="316" name="food[38][kkal]" id="food_38_kkal">									<input min="0" type="number" value="0" name="food[38][value]" id="food_38_value">								</td>
+    </tr>
+    <tr>
+        <td>Крахмал картофельный</td>
+        <td>319</td>
+        <td>
+            <input type="hidden" value="319" name="food[39][kkal]" id="food_39_kkal">									<input min="0" type="number" value="0" name="food[39][value]" id="food_39_value">								</td>
+    </tr>
+    <tr>
+        <td>Крахмал кукурузный</td>
+        <td>350</td>
+        <td>
+            <input type="hidden" value="350" name="food[40][kkal]" id="food_40_kkal">									<input min="0" type="number" value="0" name="food[40][value]" id="food_40_value">								</td>
+    </tr>
+    <tr>
+        <td>Желатин пищевой</td>
+        <td>355</td>
+        <td>
+            <input type="hidden" value="355" name="food[41][kkal]" id="food_41_kkal">									<input min="0" type="number" value="0" name="food[41][value]" id="food_41_value">								</td>
+    </tr>
+    <tr>
+        <td>Мед натуральный</td>
+        <td>328</td>
+        <td>
+            <input type="hidden" value="328" name="food[42][kkal]" id="food_42_kkal">									<input min="0" type="number" value="0" name="food[42][value]" id="food_42_value">								</td>
+    </tr>
+    <tr>
+        <td>Какао тертое</td>
+        <td>609</td>
+        <td>
+            <input type="hidden" value="609" name="food[43][kkal]" id="food_43_kkal">									<input min="0" type="number" value="0" name="food[43][value]" id="food_43_value">								</td>
+    </tr>
+    <tr>
+        <td>Карамель леденцовая</td>
+        <td>385</td>
+        <td>
+            <input type="hidden" value="385" name="food[44][kkal]" id="food_44_kkal">									<input min="0" type="number" value="0" name="food[44][value]" id="food_44_value">								</td>
+    </tr>
+    <tr>
+        <td>Карамель с начинкой</td>
+        <td>372</td>
+        <td>
+            <input type="hidden" value="372" name="food[45][kkal]" id="food_45_kkal">									<input min="0" type="number" value="0" name="food[45][value]" id="food_45_value">								</td>
+    </tr>
+    <tr>
+        <td>Драже ореховое</td>
+        <td>557</td>
+        <td>
+            <input type="hidden" value="557" name="food[46][kkal]" id="food_46_kkal">									<input min="0" type="number" value="0" name="food[46][value]" id="food_46_value">								</td>
+    </tr>
+    <tr>
+        <td>Драже сахарное</td>
+        <td>393</td>
+        <td>
+            <input type="hidden" value="393" name="food[47][kkal]" id="food_47_kkal">									<input min="0" type="number" value="0" name="food[47][value]" id="food_47_value">								</td>
+    </tr>
+    <tr>
+        <td>Драже фруктово-ягодное</td>
+        <td>402</td>
+        <td>
+            <input type="hidden" value="402" name="food[48][kkal]" id="food_48_kkal">									<input min="0" type="number" value="0" name="food[48][value]" id="food_48_value">								</td>
+    </tr>
+    <tr>
+        <td>Шоколад без добавлений</td>
+        <td>552</td>
+        <td>
+            <input type="hidden" value="552" name="food[49][kkal]" id="food_49_kkal">									<input min="0" type="number" value="0" name="food[49][value]" id="food_49_value">								</td>
+    </tr>
+    <tr>
+        <td>Шоколад молочно-сливочный</td>
+        <td>269</td>
+        <td>
+            <input type="hidden" value="269" name="food[50][kkal]" id="food_50_kkal">									<input min="0" type="number" value="0" name="food[50][value]" id="food_50_value">								</td>
+    </tr>
+    <tr>
+        <td>Какао-порошок</td>
+        <td>378</td>
+        <td>
+            <input type="hidden" value="378" name="food[51][kkal]" id="food_51_kkal">									<input min="0" type="number" value="0" name="food[51][value]" id="food_51_value">								</td>
+    </tr>
+    <tr>
+        <td>Конфеты с шоколадно-кремовыми корпусами</td>
+        <td>578</td>
+        <td>
+            <input type="hidden" value="578" name="food[52][kkal]" id="food_52_kkal">									<input min="0" type="number" value="0" name="food[52][value]" id="food_52_value">								</td>
+    </tr>
+    <tr>
+        <td>Конфеты с грильяжными корпусами</td>
+        <td>522</td>
+        <td>
+            <input type="hidden" value="522" name="food[53][kkal]" id="food_53_kkal">									<input min="0" type="number" value="0" name="food[53][value]" id="food_53_value">								</td>
+    </tr>
+    <tr>
+        <td>Батончики на гидрожире</td>
+        <td>539</td>
+        <td>
+            <input type="hidden" value="539" name="food[54][kkal]" id="food_54_kkal">									<input min="0" type="number" value="0" name="food[54][value]" id="food_54_value">								</td>
+    </tr>
+    <tr>
+        <td>Конфеты фруктово-помадные</td>
+        <td>363</td>
+        <td>
+            <input type="hidden" value="363" name="food[55][kkal]" id="food_55_kkal">									<input min="0" type="number" value="0" name="food[55][value]" id="food_55_value">								</td>
+    </tr>
+    <tr>
+        <td>Ирис полутвердый</td>
+        <td>408</td>
+        <td>
+            <input type="hidden" value="408" name="food[56][kkal]" id="food_56_kkal">									<input min="0" type="number" value="0" name="food[56][value]" id="food_56_value">								</td>
+    </tr>
+    <tr>
+        <td>Мармелад фруктово-ягодный формовой</td>
+        <td>308</td>
+        <td>
+            <input type="hidden" value="308" name="food[57][kkal]" id="food_57_kkal">									<input min="0" type="number" value="0" name="food[57][value]" id="food_57_value">								</td>
+    </tr>
+    <tr>
+        <td>Пастила</td>
+        <td>325</td>
+        <td>
+            <input type="hidden" value="325" name="food[58][kkal]" id="food_58_kkal">									<input min="0" type="number" value="0" name="food[58][value]" id="food_58_value">								</td>
+    </tr>
+    <tr>
+        <td>Зефир</td>
+        <td>318</td>
+        <td>
+            <input type="hidden" value="318" name="food[59][kkal]" id="food_59_kkal">									<input min="0" type="number" value="0" name="food[59][value]" id="food_59_value">								</td>
+    </tr>
+    <tr>
+        <td>Халва тахинная</td>
+        <td>522</td>
+        <td>
+            <input type="hidden" value="522" name="food[60][kkal]" id="food_60_kkal">									<input min="0" type="number" value="0" name="food[60][value]" id="food_60_value">								</td>
+    </tr>
+    <tr>
+        <td>Печенье сахарное из муки в\с</td>
+        <td>435</td>
+        <td>
+            <input type="hidden" value="435" name="food[61][kkal]" id="food_61_kkal">									<input min="0" type="number" value="0" name="food[61][value]" id="food_61_value">								</td>
+    </tr>
+    <tr>
+        <td>Печенье затяжное из муки в\с</td>
+        <td>416</td>
+        <td>
+            <input type="hidden" value="416" name="food[62][kkal]" id="food_62_kkal">									<input min="0" type="number" value="0" name="food[62][value]" id="food_62_value">								</td>
+    </tr>
+    <tr>
+        <td>Печенье сдобное</td>
+        <td>396</td>
+        <td>
+            <input type="hidden" value="396" name="food[63][kkal]" id="food_63_kkal">									<input min="0" type="number" value="0" name="food[63][value]" id="food_63_value">								</td>
+    </tr>
+    <tr>
+        <td>Вафли с фруктовыми начинками</td>
+        <td>361</td>
+        <td>
+            <input type="hidden" value="361" name="food[64][kkal]" id="food_64_kkal">									<input min="0" type="number" value="0" name="food[64][value]" id="food_64_value">								</td>
+    </tr>
+    <tr>
+        <td>Пряники заварные</td>
+        <td>355</td>
+        <td>
+            <input type="hidden" value="355" name="food[65][kkal]" id="food_65_kkal">									<input min="0" type="number" value="0" name="food[65][value]" id="food_65_value">								</td>
+    </tr>
+    <tr>
+        <td>Пирожное слоеное с кремом</td>
+        <td>355</td>
+        <td>
+            <input type="hidden" value="355" name="food[66][kkal]" id="food_66_kkal">									<input min="0" type="number" value="0" name="food[66][value]" id="food_66_value">								</td>
+    </tr>
+    <tr>
+        <td>Пирожное песочное с фруктовой начинкой</td>
+        <td>439</td>
+        <td>
+            <input type="hidden" value="439" name="food[67][kkal]" id="food_67_kkal">									<input min="0" type="number" value="0" name="food[67][value]" id="food_67_value">								</td>
+    </tr>
+    <tr>
+        <td>Торт бисквитный с фруктовой начинкой</td>
+        <td>398</td>
+        <td>
+            <input type="hidden" value="398" name="food[68][kkal]" id="food_68_kkal">									<input min="0" type="number" value="0" name="food[68][value]" id="food_68_value">								</td>
+    </tr>
+    <tr>
+        <td>Торт бисквитный с орехово-сливочным кремом</td>
+        <td>363</td>
+        <td>
+            <input type="hidden" value="363" name="food[69][kkal]" id="food_69_kkal">									<input min="0" type="number" value="0" name="food[69][value]" id="food_69_value">								</td>
+    </tr>
+    <tr>
+        <td>Торт слоеный с кремом</td>
+        <td>533</td>
+        <td>
+            <input type="hidden" value="533" name="food[70][kkal]" id="food_70_kkal">									<input min="0" type="number" value="0" name="food[70][value]" id="food_70_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Крупа</span></h3></td>
+    </tr>
+    <tr>
+        <td>Манная</td>
+        <td>345</td>
+        <td>
+            <input type="hidden" value="345" name="food[71][kkal]" id="food_71_kkal">									<input min="0" type="number" value="0" name="food[71][value]" id="food_71_value">								</td>
+    </tr>
+    <tr>
+        <td>Гречневая ядрица</td>
+        <td>346</td>
+        <td>
+            <input type="hidden" value="346" name="food[72][kkal]" id="food_72_kkal">									<input min="0" type="number" value="0" name="food[72][value]" id="food_72_value">								</td>
+    </tr>
+    <tr>
+        <td>Гречневая продел</td>
+        <td>344</td>
+        <td>
+            <input type="hidden" value="344" name="food[73][kkal]" id="food_73_kkal">									<input min="0" type="number" value="0" name="food[73][value]" id="food_73_value">								</td>
+    </tr>
+    <tr>
+        <td>Рисовая</td>
+        <td>343</td>
+        <td>
+            <input type="hidden" value="343" name="food[74][kkal]" id="food_74_kkal">									<input min="0" type="number" value="0" name="food[74][value]" id="food_74_value">								</td>
+    </tr>
+    <tr>
+        <td>Пшено</td>
+        <td>351</td>
+        <td>
+            <input type="hidden" value="351" name="food[75][kkal]" id="food_75_kkal">									<input min="0" type="number" value="0" name="food[75][value]" id="food_75_value">								</td>
+    </tr>
+    <tr>
+        <td>Овсяная</td>
+        <td>361</td>
+        <td>
+            <input type="hidden" value="361" name="food[76][kkal]" id="food_76_kkal">									<input min="0" type="number" value="0" name="food[76][value]" id="food_76_value">								</td>
+    </tr>
+    <tr>
+        <td>Перловая</td>
+        <td>342</td>
+        <td>
+            <input type="hidden" value="342" name="food[77][kkal]" id="food_77_kkal">									<input min="0" type="number" value="0" name="food[77][value]" id="food_77_value">								</td>
+    </tr>
+    <tr>
+        <td>Ячневая</td>
+        <td>340</td>
+        <td>
+            <input type="hidden" value="340" name="food[78][kkal]" id="food_78_kkal">									<input min="0" type="number" value="0" name="food[78][value]" id="food_78_value">								</td>
+    </tr>
+    <tr>
+        <td>Горох лущеный</td>
+        <td>337</td>
+        <td>
+            <input type="hidden" value="337" name="food[79][kkal]" id="food_79_kkal">									<input min="0" type="number" value="0" name="food[79][value]" id="food_79_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Макаронные изделия</span></h3></td>
+    </tr>
+    <tr>
+        <td>Макаронные изделия высшего сорта</td>
+        <td>350</td>
+        <td>
+            <input type="hidden" value="350" name="food[80][kkal]" id="food_80_kkal">									<input min="0" type="number" value="0" name="food[80][value]" id="food_80_value">								</td>
+    </tr>
+    <tr>
+        <td>Макаронные изделия яичные</td>
+        <td>356</td>
+        <td>
+            <input type="hidden" value="356" name="food[81][kkal]" id="food_81_kkal">									<input min="0" type="number" value="0" name="food[81][value]" id="food_81_value">								</td>
+    </tr>
+    <tr>
+        <td>Макаронные изделия 1-го сорта</td>
+        <td>351</td>
+        <td>
+            <input type="hidden" value="351" name="food[82][kkal]" id="food_82_kkal">									<input min="0" type="number" value="0" name="food[82][value]" id="food_82_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Хлебобулочные изделия</span></h3></td>
+    </tr>
+    <tr>
+        <td>Хлеб ржаной формовой</td>
+        <td>199</td>
+        <td>
+            <input type="hidden" value="199" name="food[83][kkal]" id="food_83_kkal">									<input min="0" type="number" value="0" name="food[83][value]" id="food_83_value">								</td>
+    </tr>
+    <tr>
+        <td>Хлеб российский</td>
+        <td>205</td>
+        <td>
+            <input type="hidden" value="205" name="food[84][kkal]" id="food_84_kkal">									<input min="0" type="number" value="0" name="food[84][value]" id="food_84_value">								</td>
+    </tr>
+    <tr>
+        <td>Хлеб столичный</td>
+        <td>225</td>
+        <td>
+            <input type="hidden" value="225" name="food[85][kkal]" id="food_85_kkal">									<input min="0" type="number" value="0" name="food[85][value]" id="food_85_value">								</td>
+    </tr>
+    <tr>
+        <td>Хлеб дарницкий</td>
+        <td>203</td>
+        <td>
+            <input type="hidden" value="203" name="food[86][kkal]" id="food_86_kkal">									<input min="0" type="number" value="0" name="food[86][value]" id="food_86_value">								</td>
+    </tr>
+    <tr>
+        <td>Хлеб белый высшего сорта</td>
+        <td>236</td>
+        <td>
+            <input type="hidden" value="236" name="food[87][kkal]" id="food_87_kkal">									<input min="0" type="number" value="0" name="food[87][value]" id="food_87_value">								</td>
+    </tr>
+    <tr>
+        <td>Хлеб белый 1-го сорта</td>
+        <td>237</td>
+        <td>
+            <input type="hidden" value="237" name="food[88][kkal]" id="food_88_kkal">									<input min="0" type="number" value="0" name="food[88][value]" id="food_88_value">								</td>
+    </tr>
+    <tr>
+        <td>Хлеб белый 2-го сорта</td>
+        <td>232</td>
+        <td>
+            <input type="hidden" value="232" name="food[89][kkal]" id="food_89_kkal">									<input min="0" type="number" value="0" name="food[89][value]" id="food_89_value">								</td>
+    </tr>
+    <tr>
+        <td>Батоны простые</td>
+        <td>249</td>
+        <td>
+            <input type="hidden" value="249" name="food[90][kkal]" id="food_90_kkal">									<input min="0" type="number" value="0" name="food[90][value]" id="food_90_value">								</td>
+    </tr>
+    <tr>
+        <td>Батоны нарезные молочные</td>
+        <td>260</td>
+        <td>
+            <input type="hidden" value="260" name="food[91][kkal]" id="food_91_kkal">									<input min="0" type="number" value="0" name="food[91][value]" id="food_91_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Овощи</span></h3></td>
+    </tr>
+    <tr>
+        <td>Горошек зеленый</td>
+        <td>75</td>
+        <td>
+            <input type="hidden" value="75" name="food[92][kkal]" id="food_92_kkal">									<input min="0" type="number" value="0" name="food[92][value]" id="food_92_value">								</td>
+    </tr>
+    <tr>
+        <td>Кабачки</td>
+        <td>28</td>
+        <td>
+            <input type="hidden" value="28" name="food[93][kkal]" id="food_93_kkal">									<input min="0" type="number" value="0" name="food[93][value]" id="food_93_value">								</td>
+    </tr>
+    <tr>
+        <td>Капуста белокочанная</td>
+        <td>29</td>
+        <td>
+            <input type="hidden" value="29" name="food[94][kkal]" id="food_94_kkal">									<input min="0" type="number" value="0" name="food[94][value]" id="food_94_value">								</td>
+    </tr>
+    <tr>
+        <td>Капуста белокочанная квашеная</td>
+        <td>14</td>
+        <td>
+            <input type="hidden" value="14" name="food[95][kkal]" id="food_95_kkal">									<input min="0" type="number" value="0" name="food[95][value]" id="food_95_value">								</td>
+    </tr>
+    <tr>
+        <td>Картофель</td>
+        <td>88</td>
+        <td>
+            <input type="hidden" value="88" name="food[96][kkal]" id="food_96_kkal">									<input min="0" type="number" value="0" name="food[96][value]" id="food_96_value">								</td>
+    </tr>
+    <tr>
+        <td>Лук репчатый</td>
+        <td>45</td>
+        <td>
+            <input type="hidden" value="45" name="food[97][kkal]" id="food_97_kkal">									<input min="0" type="number" value="0" name="food[97][value]" id="food_97_value">								</td>
+    </tr>
+    <tr>
+        <td>Морковь красная</td>
+        <td>34</td>
+        <td>
+            <input type="hidden" value="34" name="food[98][kkal]" id="food_98_kkal">									<input min="0" type="number" value="0" name="food[98][value]" id="food_98_value">								</td>
+    </tr>
+    <tr>
+        <td>Огурцы грунтовые</td>
+        <td>15</td>
+        <td>
+            <input type="hidden" value="15" name="food[99][kkal]" id="food_99_kkal">									<input min="0" type="number" value="0" name="food[99][value]" id="food_99_value">								</td>
+    </tr>
+    <tr>
+        <td>Огурцы соленые</td>
+        <td>18</td>
+        <td>
+            <input type="hidden" value="18" name="food[100][kkal]" id="food_100_kkal">									<input min="0" type="number" value="0" name="food[100][value]" id="food_100_value">								</td>
+    </tr>
+    <tr>
+        <td>Перец зеленый сладкий</td>
+        <td>24</td>
+        <td>
+            <input type="hidden" value="24" name="food[101][kkal]" id="food_101_kkal">									<input min="0" type="number" value="0" name="food[101][value]" id="food_101_value">								</td>
+    </tr>
+    <tr>
+        <td>Перец красный</td>
+        <td>28</td>
+        <td>
+            <input type="hidden" value="28" name="food[102][kkal]" id="food_102_kkal">									<input min="0" type="number" value="0" name="food[102][value]" id="food_102_value">								</td>
+    </tr>
+    <tr>
+        <td>Редис</td>
+        <td>21</td>
+        <td>
+            <input type="hidden" value="21" name="food[103][kkal]" id="food_103_kkal">									<input min="0" type="number" value="0" name="food[103][value]" id="food_103_value">								</td>
+    </tr>
+    <tr>
+        <td>Салат</td>
+        <td>2</td>
+        <td>
+            <input type="hidden" value="2" name="food[104][kkal]" id="food_104_kkal">									<input min="0" type="number" value="0" name="food[104][value]" id="food_104_value">								</td>
+    </tr>
+    <tr>
+        <td>Свекла</td>
+        <td>50</td>
+        <td>
+            <input type="hidden" value="50" name="food[105][kkal]" id="food_105_kkal">									<input min="0" type="number" value="0" name="food[105][value]" id="food_105_value">								</td>
+    </tr>
+    <tr>
+        <td>Томаты грунтовые</td>
+        <td>21</td>
+        <td>
+            <input type="hidden" value="21" name="food[106][kkal]" id="food_106_kkal">									<input min="0" type="number" value="0" name="food[106][value]" id="food_106_value">								</td>
+    </tr>
+    <tr>
+        <td>Томаты соленые</td>
+        <td>19</td>
+        <td>
+            <input type="hidden" value="19" name="food[107][kkal]" id="food_107_kkal">									<input min="0" type="number" value="0" name="food[107][value]" id="food_107_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Фрукты</span></h3></td>
+    </tr>
+    <tr>
+        <td>Груша</td>
+        <td>45</td>
+        <td>
+            <input type="hidden" value="45" name="food[108][kkal]" id="food_108_kkal">									<input min="0" type="number" value="0" name="food[108][value]" id="food_108_value">								</td>
+    </tr>
+    <tr>
+        <td>Слива</td>
+        <td>47</td>
+        <td>
+            <input type="hidden" value="47" name="food[109][kkal]" id="food_109_kkal">									<input min="0" type="number" value="0" name="food[109][value]" id="food_109_value">								</td>
+    </tr>
+    <tr>
+        <td>Черешня</td>
+        <td>56</td>
+        <td>
+            <input type="hidden" value="56" name="food[110][kkal]" id="food_110_kkal">									<input min="0" type="number" value="0" name="food[110][value]" id="food_110_value">								</td>
+    </tr>
+    <tr>
+        <td>Яблоки</td>
+        <td>49</td>
+        <td>
+            <input type="hidden" value="49" name="food[111][kkal]" id="food_111_kkal">									<input min="0" type="number" value="0" name="food[111][value]" id="food_111_value">								</td>
+    </tr>
+    <tr>
+        <td>Апельсины</td>
+        <td>41</td>
+        <td>
+            <input type="hidden" value="41" name="food[112][kkal]" id="food_112_kkal">									<input min="0" type="number" value="0" name="food[112][value]" id="food_112_value">								</td>
+    </tr>
+    <tr>
+        <td>Мандарины</td>
+        <td>41</td>
+        <td>
+            <input type="hidden" value="41" name="food[113][kkal]" id="food_113_kkal">									<input min="0" type="number" value="0" name="food[113][value]" id="food_113_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Ягоды</span></h3></td>
+    </tr>
+    <tr>
+        <td>Арбуз</td>
+        <td>40</td>
+        <td>
+            <input type="hidden" value="40" name="food[114][kkal]" id="food_114_kkal">									<input min="0" type="number" value="0" name="food[114][value]" id="food_114_value">								</td>
+    </tr>
+    <tr>
+        <td>Вишня</td>
+        <td>52</td>
+        <td>
+            <input type="hidden" value="52" name="food[115][kkal]" id="food_115_kkal">									<input min="0" type="number" value="0" name="food[115][value]" id="food_115_value">								</td>
+    </tr>
+    <tr>
+        <td>Виноград</td>
+        <td>73</td>
+        <td>
+            <input type="hidden" value="73" name="food[116][kkal]" id="food_116_kkal">									<input min="0" type="number" value="0" name="food[116][value]" id="food_116_value">								</td>
+    </tr>
+    <tr>
+        <td>Земляника (садовая)</td>
+        <td>43</td>
+        <td>
+            <input type="hidden" value="43" name="food[117][kkal]" id="food_117_kkal">									<input min="0" type="number" value="0" name="food[117][value]" id="food_117_value">								</td>
+    </tr>
+    <tr>
+        <td>Крыжовник</td>
+        <td>48</td>
+        <td>
+            <input type="hidden" value="48" name="food[118][kkal]" id="food_118_kkal">									<input min="0" type="number" value="0" name="food[118][value]" id="food_118_value">								</td>
+    </tr>
+    <tr>
+        <td>Малина</td>
+        <td>45</td>
+        <td>
+            <input type="hidden" value="45" name="food[119][kkal]" id="food_119_kkal">									<input min="0" type="number" value="0" name="food[119][value]" id="food_119_value">								</td>
+    </tr>
+    <tr>
+        <td>Смородина черная</td>
+        <td>43</td>
+        <td>
+            <input type="hidden" value="43" name="food[120][kkal]" id="food_120_kkal">									<input min="0" type="number" value="0" name="food[120][value]" id="food_120_value">								</td>
+    </tr>
+    <tr>
+        <td>Черника</td>
+        <td>42</td>
+        <td>
+            <input type="hidden" value="42" name="food[121][kkal]" id="food_121_kkal">									<input min="0" type="number" value="0" name="food[121][value]" id="food_121_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Рыба и морепродукты</span></h3></td>
+    </tr>
+    <tr>
+        <td>Карась</td>
+        <td>87</td>
+        <td>
+            <input type="hidden" value="87" name="food[122][kkal]" id="food_122_kkal">									<input min="0" type="number" value="0" name="food[122][value]" id="food_122_value">								</td>
+    </tr>
+    <tr>
+        <td>Карп</td>
+        <td>96</td>
+        <td>
+            <input type="hidden" value="96" name="food[123][kkal]" id="food_123_kkal">									<input min="0" type="number" value="0" name="food[123][value]" id="food_123_value">								</td>
+    </tr>
+    <tr>
+        <td>Ледяная</td>
+        <td>75</td>
+        <td>
+            <input type="hidden" value="75" name="food[124][kkal]" id="food_124_kkal">									<input min="0" type="number" value="0" name="food[124][value]" id="food_124_value">								</td>
+    </tr>
+    <tr>
+        <td>Лещ</td>
+        <td>105</td>
+        <td>
+            <input type="hidden" value="105" name="food[125][kkal]" id="food_125_kkal">									<input min="0" type="number" value="0" name="food[125][value]" id="food_125_value">								</td>
+    </tr>
+    <tr>
+        <td>Минтай</td>
+        <td>70</td>
+        <td>
+            <input type="hidden" value="70" name="food[126][kkal]" id="food_126_kkal">									<input min="0" type="number" value="0" name="food[126][value]" id="food_126_value">								</td>
+    </tr>
+    <tr>
+        <td>Нототения мраморная</td>
+        <td>156</td>
+        <td>
+            <input type="hidden" value="156" name="food[127][kkal]" id="food_127_kkal">									<input min="0" type="number" value="0" name="food[127][value]" id="food_127_value">								</td>
+    </tr>
+    <tr>
+        <td>Окунь морской</td>
+        <td>117</td>
+        <td>
+            <input type="hidden" value="117" name="food[128][kkal]" id="food_128_kkal">									<input min="0" type="number" value="0" name="food[128][value]" id="food_128_value">								</td>
+    </tr>
+    <tr>
+        <td>Окунь речной</td>
+        <td>82</td>
+        <td>
+            <input type="hidden" value="82" name="food[129][kkal]" id="food_129_kkal">									<input min="0" type="number" value="0" name="food[129][value]" id="food_129_value">								</td>
+    </tr>
+    <tr>
+        <td>Палтус (черный)</td>
+        <td>196</td>
+        <td>
+            <input type="hidden" value="196" name="food[130][kkal]" id="food_130_kkal">									<input min="0" type="number" value="0" name="food[130][value]" id="food_130_value">								</td>
+    </tr>
+    <tr>
+        <td>Салака</td>
+        <td>98</td>
+        <td>
+            <input type="hidden" value="98" name="food[131][kkal]" id="food_131_kkal">									<input min="0" type="number" value="0" name="food[131][value]" id="food_131_value">								</td>
+    </tr>
+    <tr>
+        <td>Сельдь атлантическая жирная</td>
+        <td>246</td>
+        <td>
+            <input type="hidden" value="246" name="food[132][kkal]" id="food_132_kkal">									<input min="0" type="number" value="0" name="food[132][value]" id="food_132_value">								</td>
+    </tr>
+    <tr>
+        <td>Сельдь (иваси) крупная</td>
+        <td>234</td>
+        <td>
+            <input type="hidden" value="234" name="food[133][kkal]" id="food_133_kkal">									<input min="0" type="number" value="0" name="food[133][value]" id="food_133_value">								</td>
+    </tr>
+    <tr>
+        <td>Скумбрия атлантическая</td>
+        <td>153</td>
+        <td>
+            <input type="hidden" value="153" name="food[134][kkal]" id="food_134_kkal">									<input min="0" type="number" value="0" name="food[134][value]" id="food_134_value">								</td>
+    </tr>
+    <tr>
+        <td>Ставрида океаническая</td>
+        <td>119</td>
+        <td>
+            <input type="hidden" value="119" name="food[135][kkal]" id="food_135_kkal">									<input min="0" type="number" value="0" name="food[135][value]" id="food_135_value">								</td>
+    </tr>
+    <tr>
+        <td>Треска</td>
+        <td>75</td>
+        <td>
+            <input type="hidden" value="75" name="food[136][kkal]" id="food_136_kkal">									<input min="0" type="number" value="0" name="food[136][value]" id="food_136_value">								</td>
+    </tr>
+    <tr>
+        <td>Угорь</td>
+        <td>333</td>
+        <td>
+            <input type="hidden" value="333" name="food[137][kkal]" id="food_137_kkal">									<input min="0" type="number" value="0" name="food[137][value]" id="food_137_value">								</td>
+    </tr>
+    <tr>
+        <td>Угорь морской</td>
+        <td>94</td>
+        <td>
+            <input type="hidden" value="94" name="food[138][kkal]" id="food_138_kkal">									<input min="0" type="number" value="0" name="food[138][value]" id="food_138_value">								</td>
+    </tr>
+    <tr>
+        <td>Хек</td>
+        <td>86</td>
+        <td>
+            <input type="hidden" value="86" name="food[139][kkal]" id="food_139_kkal">									<input min="0" type="number" value="0" name="food[139][value]" id="food_139_value">								</td>
+    </tr>
+    <tr>
+        <td>Щука</td>
+        <td>82</td>
+        <td>
+            <input type="hidden" value="82" name="food[140][kkal]" id="food_140_kkal">									<input min="0" type="number" value="0" name="food[140][value]" id="food_140_value">								</td>
+    </tr>
+    <tr>
+        <td>Язь</td>
+        <td>117</td>
+        <td>
+            <input type="hidden" value="117" name="food[141][kkal]" id="food_141_kkal">									<input min="0" type="number" value="0" name="food[141][value]" id="food_141_value">								</td>
+    </tr>
+    <tr>
+        <td>Кальмар (филе)</td>
+        <td>75</td>
+        <td>
+            <input type="hidden" value="75" name="food[142][kkal]" id="food_142_kkal">									<input min="0" type="number" value="0" name="food[142][value]" id="food_142_value">								</td>
+    </tr>
+    <tr>
+        <td>Краб камчатский (мясо)</td>
+        <td>69</td>
+        <td>
+            <input type="hidden" value="69" name="food[143][kkal]" id="food_143_kkal">									<input min="0" type="number" value="0" name="food[143][value]" id="food_143_value">								</td>
+    </tr>
+    <tr>
+        <td>Креветка дальневосточная (мясо)</td>
+        <td>83</td>
+        <td>
+            <input type="hidden" value="83" name="food[144][kkal]" id="food_144_kkal">									<input min="0" type="number" value="0" name="food[144][value]" id="food_144_value">								</td>
+    </tr>
+    <tr>
+        <td>Паста «Океан»</td>
+        <td>137</td>
+        <td>
+            <input type="hidden" value="137" name="food[145][kkal]" id="food_145_kkal">									<input min="0" type="number" value="0" name="food[145][value]" id="food_145_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Молочные продукты</span></h3></td>
+    </tr>
+    <tr>
+        <td>Молоко 3,2%-ной жирности</td>
+        <td>59</td>
+        <td>
+            <input type="hidden" value="59" name="food[146][kkal]" id="food_146_kkal">									<input min="0" type="number" value="0" name="food[146][value]" id="food_146_value">								</td>
+    </tr>
+    <tr>
+        <td>Молоко 2,5%-ной жирности</td>
+        <td>57</td>
+        <td>
+            <input type="hidden" value="57" name="food[147][kkal]" id="food_147_kkal">									<input min="0" type="number" value="0" name="food[147][value]" id="food_147_value">								</td>
+    </tr>
+    <tr>
+        <td>Молоко 1%-ной жирности</td>
+        <td>52</td>
+        <td>
+            <input type="hidden" value="52" name="food[148][kkal]" id="food_148_kkal">									<input min="0" type="number" value="0" name="food[148][value]" id="food_148_value">								</td>
+    </tr>
+    <tr>
+        <td>Молоко сухое цельное</td>
+        <td>475</td>
+        <td>
+            <input type="hidden" value="475" name="food[149][kkal]" id="food_149_kkal">									<input min="0" type="number" value="0" name="food[149][value]" id="food_149_value">								</td>
+    </tr>
+    <tr>
+        <td>Молоко сухое обезжиренное</td>
+        <td>349</td>
+        <td>
+            <input type="hidden" value="349" name="food[150][kkal]" id="food_150_kkal">									<input min="0" type="number" value="0" name="food[150][value]" id="food_150_value">								</td>
+    </tr>
+    <tr>
+        <td>Сливки 10%-ной жирности</td>
+        <td>118</td>
+        <td>
+            <input type="hidden" value="118" name="food[151][kkal]" id="food_151_kkal">									<input min="0" type="number" value="0" name="food[151][value]" id="food_151_value">								</td>
+    </tr>
+    <tr>
+        <td>Сметана 10%-ной жирности</td>
+        <td>116</td>
+        <td>
+            <input type="hidden" value="116" name="food[152][kkal]" id="food_152_kkal">									<input min="0" type="number" value="0" name="food[152][value]" id="food_152_value">								</td>
+    </tr>
+    <tr>
+        <td>Сметана 25%-ной жирности</td>
+        <td>248</td>
+        <td>
+            <input type="hidden" value="248" name="food[153][kkal]" id="food_153_kkal">									<input min="0" type="number" value="0" name="food[153][value]" id="food_153_value">								</td>
+    </tr>
+    <tr>
+        <td>Кефир жирный</td>
+        <td>59</td>
+        <td>
+            <input type="hidden" value="59" name="food[154][kkal]" id="food_154_kkal">									<input min="0" type="number" value="0" name="food[154][value]" id="food_154_value">								</td>
+    </tr>
+    <tr>
+        <td>Кефир нежирный</td>
+        <td>30</td>
+        <td>
+            <input type="hidden" value="30" name="food[155][kkal]" id="food_155_kkal">									<input min="0" type="number" value="0" name="food[155][value]" id="food_155_value">								</td>
+    </tr>
+    <tr>
+        <td>Простокваша обыкновенная</td>
+        <td>59</td>
+        <td>
+            <input type="hidden" value="59" name="food[156][kkal]" id="food_156_kkal">									<input min="0" type="number" value="0" name="food[156][value]" id="food_156_value">								</td>
+    </tr>
+    <tr>
+        <td>Кумыс из коровьего молока</td>
+        <td>41</td>
+        <td>
+            <input type="hidden" value="41" name="food[157][kkal]" id="food_157_kkal">									<input min="0" type="number" value="0" name="food[157][value]" id="food_157_value">								</td>
+    </tr>
+    <tr>
+        <td>Творог жирный</td>
+        <td>226</td>
+        <td>
+            <input type="hidden" value="226" name="food[158][kkal]" id="food_158_kkal">									<input min="0" type="number" value="0" name="food[158][value]" id="food_158_value">								</td>
+    </tr>
+    <tr>
+        <td>Творог полужирный</td>
+        <td>156</td>
+        <td>
+            <input type="hidden" value="156" name="food[159][kkal]" id="food_159_kkal">									<input min="0" type="number" value="0" name="food[159][value]" id="food_159_value">								</td>
+    </tr>
+    <tr>
+        <td>Творог нежирный</td>
+        <td>86</td>
+        <td>
+            <input type="hidden" value="86" name="food[160][kkal]" id="food_160_kkal">									<input min="0" type="number" value="0" name="food[160][value]" id="food_160_value">								</td>
+    </tr>
+    <tr>
+        <td>Масло сливочное несоленое</td>
+        <td>749</td>
+        <td>
+            <input type="hidden" value="749" name="food[161][kkal]" id="food_161_kkal">									<input min="0" type="number" value="0" name="food[161][value]" id="food_161_value">								</td>
+    </tr>
+    <tr>
+        <td>Масло крестьянское соленое</td>
+        <td>652</td>
+        <td>
+            <input type="hidden" value="652" name="food[162][kkal]" id="food_162_kkal">									<input min="0" type="number" value="0" name="food[162][value]" id="food_162_value">								</td>
+    </tr>
+    <tr>
+        <td>Масло топленое</td>
+        <td>886</td>
+        <td>
+            <input type="hidden" value="886" name="food[163][kkal]" id="food_163_kkal">									<input min="0" type="number" value="0" name="food[163][value]" id="food_163_value">								</td>
+    </tr>
+    <tr>
+        <td>Сыр российский</td>
+        <td>370</td>
+        <td>
+            <input type="hidden" value="370" name="food[164][kkal]" id="food_164_kkal">									<input min="0" type="number" value="0" name="food[164][value]" id="food_164_value">								</td>
+    </tr>
+    <tr>
+        <td>Сыр пошехонский</td>
+        <td>349</td>
+        <td>
+            <input type="hidden" value="349" name="food[165][kkal]" id="food_165_kkal">									<input min="0" type="number" value="0" name="food[165][value]" id="food_165_value">								</td>
+    </tr>
+    <tr>
+        <td>Плавленый сыр российский</td>
+        <td>338</td>
+        <td>
+            <input type="hidden" value="338" name="food[166][kkal]" id="food_166_kkal">									<input min="0" type="number" value="0" name="food[166][value]" id="food_166_value">								</td>
+    </tr>
+    <tr>
+        <td>Сыр колбасный копченый</td>
+        <td>269</td>
+        <td>
+            <input type="hidden" value="269" name="food[167][kkal]" id="food_167_kkal">									<input min="0" type="number" value="0" name="food[167][value]" id="food_167_value">								</td>
+    </tr>
+    <tr>
+        <td>Мороженое молочное</td>
+        <td>130</td>
+        <td>
+            <input type="hidden" value="130" name="food[168][kkal]" id="food_168_kkal">									<input min="0" type="number" value="0" name="food[168][value]" id="food_168_value">								</td>
+    </tr>
+    <tr>
+        <td>Мороженое сливочное</td>
+        <td>183</td>
+        <td>
+            <input type="hidden" value="183" name="food[169][kkal]" id="food_169_kkal">									<input min="0" type="number" value="0" name="food[169][value]" id="food_169_value">								</td>
+    </tr>
+    <tr>
+        <td>Пломбир</td>
+        <td>231</td>
+        <td>
+            <input type="hidden" value="231" name="food[170][kkal]" id="food_170_kkal">									<input min="0" type="number" value="0" name="food[170][value]" id="food_170_value">								</td>
+    </tr>
+    <tr>
+        <td>Эскимо</td>
+        <td>273</td>
+        <td>
+            <input type="hidden" value="273" name="food[171][kkal]" id="food_171_kkal">									<input min="0" type="number" value="0" name="food[171][value]" id="food_171_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Жиры растительные и жировые продукты</span></h3></td>
+    </tr>
+    <tr>
+        <td>Маргарин безмолочный</td>
+        <td>744</td>
+        <td>
+            <input type="hidden" value="744" name="food[172][kkal]" id="food_172_kkal">									<input min="0" type="number" value="0" name="food[172][value]" id="food_172_value">								</td>
+    </tr>
+    <tr>
+        <td>Маргарин молочный</td>
+        <td>746</td>
+        <td>
+            <input type="hidden" value="746" name="food[173][kkal]" id="food_173_kkal">									<input min="0" type="number" value="0" name="food[173][value]" id="food_173_value">								</td>
+    </tr>
+    <tr>
+        <td>Маргарин сливочный</td>
+        <td>746</td>
+        <td>
+            <input type="hidden" value="746" name="food[174][kkal]" id="food_174_kkal">									<input min="0" type="number" value="0" name="food[174][value]" id="food_174_value">								</td>
+    </tr>
+    <tr>
+        <td>Маргарин бутербродный «Экстра»</td>
+        <td>744</td>
+        <td>
+            <input type="hidden" value="744" name="food[175][kkal]" id="food_175_kkal">									<input min="0" type="number" value="0" name="food[175][value]" id="food_175_value">								</td>
+    </tr>
+    <tr>
+        <td>Жир кулинарный</td>
+        <td>897</td>
+        <td>
+            <input type="hidden" value="897" name="food[176][kkal]" id="food_176_kkal">									<input min="0" type="number" value="0" name="food[176][value]" id="food_176_value">								</td>
+    </tr>
+    <tr>
+        <td>Майонез</td>
+        <td>628</td>
+        <td>
+            <input type="hidden" value="628" name="food[177][kkal]" id="food_177_kkal">									<input min="0" type="number" value="0" name="food[177][value]" id="food_177_value">								</td>
+    </tr>
+    <tr>
+        <td>Масло подсолнечное рафинированное</td>
+        <td>899</td>
+        <td>
+            <input type="hidden" value="899" name="food[178][kkal]" id="food_178_kkal">									<input min="0" type="number" value="0" name="food[178][value]" id="food_178_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Грибы и домашние заготовки</span></h3></td>
+    </tr>
+    <tr>
+        <td>Белые свежие</td>
+        <td>25</td>
+        <td>
+            <input type="hidden" value="25" name="food[179][kkal]" id="food_179_kkal">									<input min="0" type="number" value="0" name="food[179][value]" id="food_179_value">								</td>
+    </tr>
+    <tr>
+        <td>Белые сушеные</td>
+        <td>212</td>
+        <td>
+            <input type="hidden" value="212" name="food[180][kkal]" id="food_180_kkal">									<input min="0" type="number" value="0" name="food[180][value]" id="food_180_value">								</td>
+    </tr>
+    <tr>
+        <td>Подберезовики свежие</td>
+        <td>32</td>
+        <td>
+            <input type="hidden" value="32" name="food[181][kkal]" id="food_181_kkal">									<input min="0" type="number" value="0" name="food[181][value]" id="food_181_value">								</td>
+    </tr>
+    <tr>
+        <td>Лисички свежие</td>
+        <td>23</td>
+        <td>
+            <input type="hidden" value="23" name="food[182][kkal]" id="food_182_kkal">									<input min="0" type="number" value="0" name="food[182][value]" id="food_182_value">								</td>
+    </tr>
+    <tr>
+        <td>Маслята свежие</td>
+        <td>20</td>
+        <td>
+            <input type="hidden" value="20" name="food[183][kkal]" id="food_183_kkal">									<input min="0" type="number" value="0" name="food[183][value]" id="food_183_value">								</td>
+    </tr>
+    <tr>
+        <td>Опята свежие</td>
+        <td>20</td>
+        <td>
+            <input type="hidden" value="20" name="food[184][kkal]" id="food_184_kkal">									<input min="0" type="number" value="0" name="food[184][value]" id="food_184_value">								</td>
+    </tr>
+    <tr>
+        <td>Подосиновики свежие</td>
+        <td>31</td>
+        <td>
+            <input type="hidden" value="31" name="food[185][kkal]" id="food_185_kkal">									<input min="0" type="number" value="0" name="food[185][value]" id="food_185_value">								</td>
+    </tr>
+    <tr>
+        <td>Подосиновики сушеные</td>
+        <td>307</td>
+        <td>
+            <input type="hidden" value="307" name="food[186][kkal]" id="food_186_kkal">									<input min="0" type="number" value="0" name="food[186][value]" id="food_186_value">								</td>
+    </tr>
+    <tr>
+        <td>Варенье (в среднем)</td>
+        <td>291</td>
+        <td>
+            <input type="hidden" value="291" name="food[187][kkal]" id="food_187_kkal">									<input min="0" type="number" value="0" name="food[187][value]" id="food_187_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Соки</span></h3></td>
+    </tr>
+    <tr>
+        <td>Апельсиновый</td>
+        <td>59</td>
+        <td>
+            <input type="hidden" value="59" name="food[188][kkal]" id="food_188_kkal">									<input min="0" type="number" value="0" name="food[188][value]" id="food_188_value">								</td>
+    </tr>
+    <tr>
+        <td>Виноградный</td>
+        <td>77</td>
+        <td>
+            <input type="hidden" value="77" name="food[189][kkal]" id="food_189_kkal">									<input min="0" type="number" value="0" name="food[189][value]" id="food_189_value">								</td>
+    </tr>
+    <tr>
+        <td>Томатный</td>
+        <td>19</td>
+        <td>
+            <input type="hidden" value="19" name="food[190][kkal]" id="food_190_kkal">									<input min="0" type="number" value="0" name="food[190][value]" id="food_190_value">								</td>
+    </tr>
+    <tr>
+        <td>Яблочный</td>
+        <td>50</td>
+        <td>
+            <input type="hidden" value="50" name="food[191][kkal]" id="food_191_kkal">									<input min="0" type="number" value="0" name="food[191][value]" id="food_191_value">								</td>
+    </tr>
+    <tr>
+        <td>Мандариновый</td>
+        <td>44</td>
+        <td>
+            <input type="hidden" value="44" name="food[192][kkal]" id="food_192_kkal">									<input min="0" type="number" value="0" name="food[192][value]" id="food_192_value">								</td>
+    </tr>
+    <tr class="header fixed">
+        <td colspan="3"><h3><span class="label label-info">Алкогольные напитки</span></h3></td>
+    </tr>
+    <tr>
+        <td>Вино столовое белое</td>
+        <td>65</td>
+        <td>
+            <input type="hidden" value="65" name="food[193][kkal]" id="food_193_kkal">									<input min="0" type="number" value="0" name="food[193][value]" id="food_193_value">								</td>
+    </tr>
+    <tr>
+        <td>Вино столовое красное</td>
+        <td>71</td>
+        <td>
+            <input type="hidden" value="71" name="food[194][kkal]" id="food_194_kkal">									<input min="0" type="number" value="0" name="food[194][value]" id="food_194_value">								</td>
+    </tr>
+    <tr>
+        <td>Шампанское полусухое</td>
+        <td>88</td>
+        <td>
+            <input type="hidden" value="88" name="food[195][kkal]" id="food_195_kkal">									<input min="0" type="number" value="0" name="food[195][value]" id="food_195_value">								</td>
+    </tr>
+    <tr>
+        <td>Портвейн белый</td>
+        <td>123</td>
+        <td>
+            <input type="hidden" value="123" name="food[196][kkal]" id="food_196_kkal">									<input min="0" type="number" value="0" name="food[196][value]" id="food_196_value">								</td>
+    </tr>
+    <tr>
+        <td>Десертное белое вино</td>
+        <td>153</td>
+        <td>
+            <input type="hidden" value="153" name="food[197][kkal]" id="food_197_kkal">									<input min="0" type="number" value="0" name="food[197][value]" id="food_197_value">								</td>
+    </tr>
+    <tr>
+        <td>Коньяк 3-звездочный</td>
+        <td>239</td>
+        <td>
+            <input type="hidden" value="239" name="food[198][kkal]" id="food_198_kkal">									<input min="0" type="number" value="0" name="food[198][value]" id="food_198_value">								</td>
+    </tr>
+    <tr>
+        <td>Водка 40&amp;deg;</td>
+        <td>280</td>
+        <td>
+            <input type="hidden" value="280" name="food[199][kkal]" id="food_199_kkal">									<input min="0" type="number" value="0" name="food[199][value]" id="food_199_value">								</td>
+    </tr>
+    <tr>
+        <td>Водка 60&amp;deg;</td>
+        <td>420</td>
+        <td>
+            <input type="hidden" value="420" name="food[200][kkal]" id="food_200_kkal">									<input min="0" type="number" value="0" name="food[200][value]" id="food_200_value">								</td>
+    </tr>
+    <tr>
+        <td>Спирт</td>
+        <td>700</td>
+        <td>
+            <input type="hidden" value="700" name="food[201][kkal]" id="food_201_kkal">									<input min="0" type="number" value="0" name="food[201][value]" id="food_201_value">								</td>
+    </tr>
+    <tr>
+        <td>Пиво</td>
+        <td>60</td>
+        <td>
+            <input type="hidden" value="60" name="food[202][kkal]" id="food_202_kkal">									<input min="0" type="number" value="0" name="food[202][value]" id="food_202_value">								</td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+</body>
+</html>
