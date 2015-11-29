@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 
@@ -1294,14 +1295,25 @@
         <td>Пиво</td>
         <td>60</td>
         <td>
-            <input type="hidden" value="60" name="food[202][kkal]" id="food_202_kkal">									<input min="0" type="number" value="0" name="food[202][value]" id="food_202_value">								</td>
+            <input type="hidden" value="60" name="food[202][kkal]" id="food_202_kkal">									
+            <input min="0" type="number" value="0" name="food[202][value]" id="food_202_value">								</td>
     </tr>
     </tbody></table>
 </div>
  <div class="row">
- <button type="button" class="btn btn-success col-md-2 col-md-offset-5">Суммировать</button>
+ <button type="button" id="calc" class="btn btn-success col-md-2 col-md-offset-5">Суммировать</button>
 </div>
 
 </div>
 </body>
+<script>
+
+    $( "#calc" ).click(function() {
+    	var sum = 0 ;
+		$('input[type=number]').each(function(){
+			sum += +$(this).val();
+		})
+        alert("Всего: "+ sum+ " Каллорий");
+    });
+</script
 </html>
